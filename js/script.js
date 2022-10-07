@@ -1,5 +1,5 @@
 //
-const apiKey = 'c08395e04178ea519f6860b0b51c65cb'
+const apiKey = ' ' //aqui vai a chave da api gerada em https://openweathermap.org/
 const countryApi = 'https://countryflagsapi.com/png/'
 
 
