@@ -1,4 +1,4 @@
-//
+
 const apiKey = ' ' //aqui vai a chave da api gerada em https://openweathermap.org/
 const countryApi = 'https://countryflagsapi.com/png/'
 
@@ -14,7 +14,6 @@ const humidityElement =document.querySelector('#umidity span')
 const windElement =document.querySelector('#wind span')
 
 
-// Funções
 const getWeatherData = async(city) => {
     const apiWeatherUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}&lang=pt_br`
 
@@ -34,19 +33,10 @@ const showWeatherData = async (city) => {
     countryElement.setAttribute('src',countryApi + data.sys.country)
     humidityElement.innerText = `${data.main.humidity}%`
     windElement.innerText =  `${data.wind.speed}km/h`
-
-
 }
 
-
-
-
-
-
-
-//
 searchBtn.addEventListener('click',(e)=>{
-    e.preventDefault() //Não permite que o formulário envie os dados
+    e.preventDefault() 
 
     const city = cityInput.value
 
